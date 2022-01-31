@@ -1,23 +1,52 @@
-import logo from './logo.svg';
+// DEPENDENCIES
+import React from "react"
+import {Route, Switch} from "react-router-dom"
+
+// STYLES
 import './App.css';
+import './styles.css'
+
+// PAGES/COMPONENTS
+import Header from "./components/Header"
+import Footer from "./components/Footer"
+
+import About from "./pages/About"
+import Main from "./pages/Main"
+import Projects from "./pages/Projects"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="contents">
+        <Header />
+        <Switch>
+          {/* HOME */}
+          <Route exact
+            path="/"
+            render={(routerProps) => <Main 
+              {...routerProps}
+              // props go here
+            />}
+          />
+          {/* ABOUT */}
+          <Route 
+            path="/about"
+            render={(routerProps) => <About 
+              {...routerProps}
+              // props go here
+            />}
+          />
+          {/* PROJECTS */}
+          <Route 
+            path="/projects"
+            render={(routerProps) => <Projects 
+              {...routerProps}
+              // props go here
+            />} 
+          />
+        </Switch>
+      </div>
+      <Footer />
     </div>
   );
 }

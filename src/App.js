@@ -11,8 +11,10 @@ import Header from "./components/Header"
 import Footer from "./components/Footer"
 
 import About from "./pages/About"
+import Contact from "./pages/Contact"
 import Main from "./pages/Main"
 import Projects from "./pages/Projects"
+import Show from "./pages/Show"
 
 function App() {
   return (
@@ -43,6 +45,14 @@ function App() {
               {...routerProps}
               // props go here
             />} 
+          />
+          {/* CONTACT */}
+          <Route 
+            path="/contact"
+            render={(routerProps) => <Contact 
+              {...routerProps}
+              // props go here
+            />}
           />
         </Switch>
       </div>

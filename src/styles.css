@@ -7,6 +7,14 @@
 
 /* MAIN */
 
+/* HEADER */
+#navbar-logo {
+    max-height: 50px;
+    position: absolute;
+        top: 0px; right: 0px;
+
+}
+
 /* FOOTER */
 
 /* TODO: Stick footer to bottom of page */

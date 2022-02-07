@@ -40,6 +40,13 @@ function App() {
           />
           {/* PROJECTS */}
           <Route 
+            path="/projects/:id"
+            render={(routerProps) => <Show 
+              {...routerProps}
+              // props go here
+            />}
+          />
+          <Route 
             path="/projects"
             render={(routerProps) => <Projects 
               {...routerProps}

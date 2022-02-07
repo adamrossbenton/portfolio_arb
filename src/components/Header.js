@@ -9,7 +9,6 @@ function Header() {
         color: "white",
         padding: "5px",
         display: "flex",
-        flexDirection: "column",
         textAlign: "left",
     }
 
@@ -21,10 +20,12 @@ function Header() {
     return <div className="header-container">
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" id="header-navbar">
             <div style={navbarTitle}>
-                {/* <img src="adamrossbenton.png" alt="" id="navbar-logo"/> */}
-                <p style={arb}>adam</p>
-                <p style={arb}>ross</p>
-                <p style={arb}>benton</p>
+                <img src="adamrossbenton_transparent.png" alt="" id="navbar-logo"/>
+                <div>
+                    <p style={arb}>adam</p>
+                    <p style={arb}>ross</p>
+                    <p style={arb}>benton</p>
+                </div>
             </div>
             <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
             <Navbar.Collapse id="responsive-navbar-nav">

@@ -7,6 +7,34 @@
 
 /* MAIN */
 
+.logo {
+    animation: fadeIn 1.5s;
+    -webkit-animation: fadeIn 1.5s;
+    -moz-animation: fadeIn 1.5s;
+}
+
+.check-it-out {
+    display: flex;
+    justify-content: right;
+    padding: 10px;
+    opacity: 0;
+    animation: blinker 1s linear infinite;
+    -webkit-animation: blinker 1s linear infinite;
+    -moz-animation: blinker 1s linear infinite;
+    animation-delay: 3s;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@keyframes blinker {
+    0% {opacity:0;}
+    50% {opacity:1;}
+    100% {opacity: 0;}
+}
+
 /* HEADER */
 #navbar-logo {
     max-height: 50px;

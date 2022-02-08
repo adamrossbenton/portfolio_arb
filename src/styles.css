@@ -35,6 +35,16 @@
     100% {opacity: 0;}
 }
 
+/* CONTACT */
+
+.scene {
+    width: 200px;
+    height: 200px;
+    perspective: 600px;
+}
+
+
+
 /* HEADER */
 #navbar-logo {
     max-height: 50px;
@@ -50,3 +60,19 @@
     background: linear-gradient(rgba(255,0,0,0.5), rgba(0,0,255,0.5));
     padding: 10px 0px 10px 0px;
 } */
+
+/* MEDIA QUERIES */
+
+@media (min-width: 480px) {
+
+}
+
+@media (min-width: 769px) {
+
+}
+
+@media (min-width: 992px) {
+    .check-it-out {
+        justify-content: left;
+    }
+}

@@ -16,7 +16,15 @@ import Main from "./pages/Main"
 import Projects from "./pages/Projects"
 import Show from "./pages/Show"
 
+// HOOKS
+import RenderHooks from "../src/hooks/RenderHooks"
+import WorksHooks from "../src/hooks/WorksHooks"
+
 function App() {
+  
+  const {loading} = RenderHooks()
+  const {works, getWorks} = WorksHooks()
+
   return (
     <div className="App">
       <div className="contents">
@@ -43,14 +51,18 @@ function App() {
             path="/projects/:id"
             render={(routerProps) => <Show 
               {...routerProps}
-              // props go here
+              loading={loading}
+              works={works}
+              getWorks={getWorks}
             />}
           />
           <Route 
             path="/projects"
             render={(routerProps) => <Projects 
               {...routerProps}
-              // props go here
+              loading={loading}
+              works={works}
+              getWorks={getWorks}
             />} 
           />
           {/* CONTACT */}

@@ -48,6 +48,7 @@ function Header() {
                         <NavDropdown.Item href="/projects/3">chowdr</NavDropdown.Item>
                         <NavDropdown.Item href="/projects/4">halfprice</NavDropdown.Item>
                         <NavDropdown.Item href="/projects/5">TRICKS: THE MEETING</NavDropdown.Item>
+                        <NavDropdown.Item href="/projects/6">sArcAsTiCASE</NavDropdown.Item>
                     </NavDropdown>
                     <Nav.Link href="/about">About</Nav.Link>
                     <Nav.Link href="/contact">Contact</Nav.Link>
